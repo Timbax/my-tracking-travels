@@ -1,11 +1,15 @@
 import { Link } from "react-router-dom";
+import Nav from "../components/Nav";
+import AppNav from "../components/AppNav";
 
 export default function HomePage() {
   return (
     <div>
-      <h1>World Wise</h1>
+      <Nav />
+      <AppNav />
+      <h1 className="test">World Wise</h1>
 
-      <Link to="/pricing">Pricing</Link>
+      <Link to="/app">Go to the App</Link>
     </div>
   );
 }
