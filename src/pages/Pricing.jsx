@@ -1,10 +1,26 @@
+// Uses the same styles as Product
+import styles from "../components/CSSModules/Product.module.css";
 import Nav from "../components/Nav";
 
-export default function Pricing() {
+export default function Product() {
   return (
-    <div>
+    <main className={styles.product}>
       <Nav />
-      Pricing
-    </div>
+      <section>
+        <div>
+          <h2>
+            Simple pricing.
+            <br />
+            Just $9/month.
+          </h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae vel
+            labore mollitia iusto. Recusandae quos provident, laboriosam fugit
+            voluptatem iste.
+          </p>
+        </div>
+        <img src="./img/img-2.jpg" alt="overview of a large city with skyscrapers" />
+      </section>
+    </main>
   );
 }
