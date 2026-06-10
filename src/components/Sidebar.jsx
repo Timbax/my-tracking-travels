@@ -14,7 +14,6 @@ export default function Sidebar() {
       <Outlet />
 
       <Footer />
-      
     </div>
   );
 }
