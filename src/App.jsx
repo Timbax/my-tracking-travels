@@ -23,7 +23,7 @@ export default function App() {
         const data = await res.json();
         setCities(data);
       } catch {
-        alert("There was an error loading data...");
+        alert("There was an error loading data...!");
       } finally {
         setIsLoading(false);
       }
