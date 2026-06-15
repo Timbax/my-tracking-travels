@@ -6,14 +6,19 @@ export default function Map() {
   const lat = searchParms.get("lat");
   const lng = searchParms.get("lng");
 
-  console.log("AQUI ESTA LAT:", lat);
-  console.log("AQUI ESTA LNG:", lng);
   return (
     <div className={styles.mapContainer}>
       <h1>Map</h1>
       <h2>
         Position: {lat}, {lng}
       </h2>
+      <button
+        onClick={() => {
+          setSearchParams({ lat: 50, lng: 100 });
+        }}
+      >
+        Changes Pos
+      </button>
     </div>
   );
 }
