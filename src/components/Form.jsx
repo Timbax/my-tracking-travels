@@ -26,6 +26,7 @@ function Form() {
     <form className={styles.form}>
       <div className={styles.row}>
         <label htmlFor="cityName">City name</label>
+        
         <input
           id="cityName"
           onChange={(e) => setCityName(e.target.value)}
@@ -36,6 +37,7 @@ function Form() {
 
       <div className={styles.row}>
         <label htmlFor="date">When did you go to {cityName}?</label>
+
         <input
           id="date"
           onChange={(e) => setDate(e.target.value)}
